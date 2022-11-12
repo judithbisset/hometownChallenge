@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lana an der Etsch</title>
+    <meta name="description" content="This webpage is about my howmtown, Lana in South Tyrol, Italy." />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2e7cb6833a.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header"><h1>Random Facts about Lana</h1></div>
+    
+    
+    <ul>
+    <button onclick="newFact()">New Fact</button>
+    <p id="factDisplay"></p>
+    </ul>
+    <div class="container">
+        <div class="image-container">
+            <div class="image" style="--clip-start: ellipse(0 0 at 0 0); --clip-end: ellipse(150% 150% at 0 0);"><img
+                    src="lana1.JPG" /><img src="lana1.JPG" /></div>
+            <div class="image" style="--clip-start: inset(100% 0 0 0); --clip-end: inset(0 0 0 0);"><img
+                    src="lana2.JPG" /><img src="lana2.JPG" /></div>
+            <div class="image" style="--clip-start: ellipse(0 0 at 100% 0); --clip-end: ellipse(150% 150% at 100% 0);"><img
+                    src="lana3.JPG" /><img src="lana3.JPG" /></div>
+            <div class="image"
+                style="--clip-start: polygon(50% 50%,  50% 50%,  50% 50%, 50% 50%); --clip-end: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);">
+                <img src="lana4.JPG" /><img src="lana4.JPG" />
+            </div>
+            <div class="image" style="--clip-start: circle(0); --clip-end: circle(125%);"><img src="lana5.JPG" /><img
+                    src="lana5.JPG" /></div>
+            <div class="image" style="--clip-start: inset(100% 100% 100% 100%); --clip-end: inset(0 0 0 0);"><img
+                    src="lana6.JPG" /><img src="lana6.JPG" /></div>
+            <div class="image" style="--clip-start: ellipse(0 0 at 0 100%); --clip-end: ellipse(150% 150% at 0 100%);"><img
+                    src="lana7.JPG" /><img
+                    src="lana7.JPG" /></div>
+            <div class="image" style="--clip-start: inset(0 0 100% 0); --clip-end: inset(0 0 0 0);"><img
+                    src="lana8.JPG" /><img
+                    src="lana8.JPG" /></div>
+            <div class="image" style="--clip-start: ellipse(0 0 at 100% 100%); --clip-end: ellipse(150% 150% at 100% 100%);"><img
+                    src="lana9.JPG" /><img
+                    src="lana9.JPG" /></div>
+            </div>
+        
+        </div>
+    </div>
+    <script>
+        var facts =["Lana is the capital of apple producting in South Tyrol", 
+        "Lana's current mayor has been in power since 2010", "Olympic medalist Armin Zögglere is from Lana", "Lana has about 14,000 inhabitants"]
+        function newFact() {
+            var randomNumber = Math.floor(Math.random() * (facts.length));
+             
+            document.getElementById('factDisplay').innerHTML = facts[randomNumber];
+        }
+       
+
+    </script>
+</body>
+
+</html>
